@@ -212,6 +212,115 @@ const ECP_5M_THEORY = [
   },
 ];
 
+const ECP_2M = [
+  {
+    sim: "Similar 1",
+    items: [
+      {
+        question:
+          "Mention two properties of equipotential surfaces. / Write two properties of equipotential surfaces.",
+        difficulty: "easy",
+        marks: "2 marks",
+        repetitions: [
+          { year: "2023", exam: "Supplement 1" },
+          { year: "2023", exam: "Supplement 2" },
+          { year: "2027", exam: "Model Paper 4" },
+        ],
+        total: 3,
+        answer: "",
+      },
+      {
+        question:
+          "On what factors does the capacitance of a parallel plate capacitor depend? / Name any two factors on which the capacitance of a parallel plate capacitor depends.",
+        difficulty: "easy",
+        marks: "2 marks",
+        repetitions: [
+          { year: "2023", exam: "Main Exam" },
+          { year: "2026", exam: "Exam 2" },
+        ],
+        total: 2,
+        answer: "",
+      },
+      {
+        question:
+          "Define electric potential energy of a system of charges. What happens to the potential energy of a system of two unlike charges when the distance between them is increased (assume there is no external electric field)?",
+        difficulty: "easy",
+        marks: "2 marks",
+        repetitions: [{ year: "2025", exam: "Exam 1" }],
+        total: 1,
+        answer: "",
+      },
+      {
+        question:
+          "The electrostatic potential energy of a system of two like charges is positive. Explain.",
+        difficulty: "easy",
+        marks: "2 marks",
+        repetitions: [{ year: "2027", exam: "Model Paper 1" }],
+        total: 1,
+        answer: "",
+      },
+      {
+        question: "What are polar molecules? Give an example.",
+        difficulty: "easy",
+        marks: "2 marks",
+        repetitions: [{ year: "2027", exam: "Model Paper 2" }],
+        total: 1,
+        answer: "",
+      },
+      {
+        question:
+          "What is meant by equipotential surface? Draw equipotential surfaces for an electric dipole.",
+        difficulty: "easy",
+        marks: "2 marks",
+        repetitions: [{ year: "2027", exam: "Model Paper 3" }],
+        total: 1,
+        answer: "",
+      },
+      {
+        question:
+          "The electrostatic potential energy of a system of two like charges decreases with increase in the distance of separation. Explain the statement using suitable expression.",
+        difficulty: "easy",
+        marks: "2 marks",
+        repetitions: [{ year: "2027", exam: "Model Paper 5" }],
+        total: 1,
+        answer: "",
+      },
+    ],
+  },
+  {
+    sim: "Similar 2",
+    items: [
+      {
+        question:
+          "Two point charges $5 \\times 10^{-6}\\text{ C}$ and $-3 \\times 10^{-6}\\text{ C}$ are located 10 cm apart. Find the point between the two charges where potential is zero.",
+        difficulty: "easy",
+        marks: "2 marks",
+        repetitions: [{ year: "2024", exam: "Exam 1" }],
+        total: 1,
+        answer: "",
+      },
+      {
+        question:
+          "Two capacitors $3\\mu\\text{F}$ and $6\\mu\\text{F}$ are connected in series. Find the equivalent capacitance of the combination.",
+        difficulty: "easy",
+        marks: "2 marks",
+        repetitions: [{ year: "2024", exam: "Exam 2" }],
+        total: 1,
+        answer: "",
+      },
+      {
+        question:
+          "The potential at a point is given by $V = ax - bx^3$ where a and b are constants. Find the value of electric field at that point.",
+        difficulty: "easy",
+        marks: "2 marks",
+        repetitions: [{ year: "2024", exam: "Exam 3" }],
+        total: 1,
+        answer: "",
+      },
+    ],
+  },
+];
+
 const ECF_2M = [
   {
     sim: "Similar 1",
@@ -429,6 +538,8 @@ export const SIMILARITY_BANK = {
   "Electric Charges & Fields:3m": ECF_3M,
   "Electrostatic Potential and Capacitance:5m": ECP_5M_THEORY,
   "Electrostatic Potential & Capacitance:5m": ECP_5M_THEORY,
+  "Electrostatic Potential and Capacitance:2m": ECP_2M,
+  "Electrostatic Potential & Capacitance:2m": ECP_2M,
 };
 
 export function resolveSimilarity({ chapterName, mark }) {
