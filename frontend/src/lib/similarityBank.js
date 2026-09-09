@@ -5,87 +5,87 @@
 
 const ECF_NUMERIC = [
   {
-    sim: "S1",
+    sim: "Similar 1",
     items: [
       {
         question:
-          "A positively charged spherical conductor of radius 0.1 m produces an electric field of 1.8 × 10³ N C⁻¹ at a point P distant 0.2 m from its centre. Calculate the magnitude of the charge present on the spherical conductor. Also find the new charge on the charged spherical conductor if 5 × 10¹⁰ more electrons are removed from it.",
+          "A positively charged spherical conductor of radius $0.1\\text{ m}$ produces an electric field of $1.8 \\times 10^{3}\\text{ N C}^{-1}$ at a point P distant $0.2\\text{ m}$ from its centre. Calculate the magnitude of the charge present on the spherical conductor. Also find the new charge on the charged spherical conductor if $5 \\times 10^{10}$ more electrons are removed from it.",
         difficulty: "easy",
         marks: "5 marks",
         repetitions: [{ year: "2027", exam: "Model Paper 1" }],
         total: 1,
         answer:
-          "Using E = kQ/r², Q = E r² / k = (1.8×10³ × 0.2²) / (9×10⁹) = 8×10⁻⁹ C. If 5×10¹⁰ electrons are removed, q_new = Q − (5×10¹⁰ × 1.6×10⁻¹⁹) = 8×10⁻⁹ − 8×10⁻⁹ = 0 C.",
+          "$$\\text{Step 1:} E = \\frac{kQ}{r^2}. \\text{ Given } E = 1.8 \\times 10^{3}, r = 0.2\\text{ m}. \\\\ 1.8 \\times 10^{3} = \\frac{9 \\times 10^{9} \\times Q}{(0.2)^2} \\Rightarrow Q = \\frac{1.8 \\times 10^{3} \\times 0.04}{9 \\times 10^{9}} = 8 \\times 10^{-9}\\text{ C} = \\mathbf{8\\text{ nC}}. \\\\ \\text{Step 2:} \\text{ Charge removed } = ne = 5 \\times 10^{10} \\times 1.6 \\times 10^{-19} = 8 \\times 10^{-9}\\text{ C}. \\\\ \\text{New charge } = 8\\text{ nC} + 8\\text{ nC} = \\mathbf{16\\text{ nC}}.$$",
       },
       {
         question:
-          "A uniformly charged spherical shell of radius 10 cm has a surface charge density of 16 μC/m². Find the electric field due to the shell at a distance of (a) 20 cm from the centre of the shell, (b) 5 cm from the centre of the shell.",
+          "A uniformly charged spherical shell of radius $10\\text{ cm}$ has a surface charge density of $16\\ \\mu\\text{C/m}^2$. Find the electric field due to the shell at a distance of (a) $20\\text{ cm}$ from the centre of the shell, (b) $5\\text{ cm}$ from the centre of the shell.",
         difficulty: "easy",
         marks: "5 marks",
         repetitions: [{ year: "2025", exam: "Exam 1" }],
         total: 1,
         answer:
-          "Q = σ × 4πR² = 16×10⁻⁶ × 4π × (0.1)² ≈ 2.01×10⁻⁶ C. (a) At 0.2 m (outside): E = kQ/r² = (9×10⁹ × 2.01×10⁻⁶) / 0.2² ≈ 4.5×10⁵ N/C. (b) At 0.05 m (inside): E = 0.",
+          "$$\\text{Step 1:} \\text{ Total charge } Q = \\sigma \\times 4\\pi R^2 = 16 \\times 10^{-6} \\times 4\\pi (0.1)^2 = 2.01 \\times 10^{-6}\\text{ C}. \\\\ \\text{Step 2 (a):} \\text{ At } r = 0.2\\text{ m}, E = \\frac{kQ}{r^2} = \\frac{9 \\times 10^{9} \\times 2.01 \\times 10^{-6}}{(0.2)^2} = \\mathbf{4.52 \\times 10^{5}\\text{ N/C}}. \\\\ \\text{Step 3 (b):} \\text{ At } r = 0.05\\text{ m} < R, \\text{ electric field inside shell } E = \\mathbf{0}.$$",
       },
       {
         question:
-          "Two point charges 2 μC and 3 μC are placed at the two corners A and B of an equilateral triangle ABC of side 0.2 m. Calculate the magnitude of resultant electric field at the corner C of that triangle.",
+          "Two point charges $2\\ \\mu\\text{C}$ and $3\\ \\mu\\text{C}$ are placed at the two corners A and B of an equilateral triangle ABC of side $0.2\\text{ m}$. Calculate the magnitude of resultant electric field at the corner C of that triangle.",
         difficulty: "easy",
         marks: "5 marks",
         repetitions: [{ year: "2025", exam: "Exam 3" }],
         total: 1,
         answer:
-          "E_A = k(2×10⁻⁶) / 0.2² = 4.5×10⁵ N/C. E_B = k(3×10⁻⁶) / 0.2² = 6.75×10⁵ N/C. Angle is 60°. Resultant E = √(E_A² + E_B² + 2E_A E_B cos60) = √((4.5)² + (6.75)² + 2×4.5×6.75×0.5) × 10⁵ ≈ 9.85×10⁵ N/C.",
+          "$$\\text{Step 1:} E_A = \\frac{9 \\times 10^{9} \\times 2 \\times 10^{-6}}{(0.2)^2} = 4.5 \\times 10^{5}\\text{ N/C}; \\quad E_B = \\frac{9 \\times 10^{9} \\times 3 \\times 10^{-6}}{(0.2)^2} = 6.75 \\times 10^{5}\\text{ N/C}. \\\\ \\text{Step 2:} \\text{ Angle between } E_A \\text{ and } E_B = 60^\\circ. \\\\ E_{net} = \\sqrt{E_A^2 + E_B^2 + 2E_AE_B\\cos 60^\\circ} = \\sqrt{(4.5)^2 + (6.75)^2 + 2(4.5)(6.75)(0.5)} \\times 10^{5} = \\mathbf{9.96 \\times 10^{5}\\text{ N/C}}.$$",
       },
       {
         question:
-          "Two point charges +15 μC and −10 μC are separated by a distance of 20 cm in air. Calculate the electric field at the mid point of the line joining two charges. If a point charge of 20 mC is placed at that mid point, what is the magnitude of electric force experienced by it?",
+          "Two point charges $+15\\ \\mu\\text{C}$ and $-10\\ \\mu\\text{C}$ are separated by a distance of $20\\text{ cm}$ in air. Calculate the electric field at the mid point of the line joining two charges. If a point charge of $20\\text{ mC}$ is placed at that mid point, what is the magnitude of electric force experienced by it?",
         difficulty: "easy",
         marks: "5 marks",
         repetitions: [{ year: "2024", exam: "Exam 1" }],
         total: 1,
         answer:
-          "Midpoint is 0.1 m from each. E1 = (9×10⁹ × 15×10⁻⁶) / 0.1² = 1.35×10⁷ N/C. E2 = (9×10⁹ × 10×10⁻⁶) / 0.1² = 0.9×10⁷ N/C. Net E = E1 + E2 = 2.25×10⁷ N/C. Force F = qE = 20×10⁻³ × 2.25×10⁷ = 4.5×10⁵ N.",
+          "$$\\text{Step 1:} \\text{ Distance } r = 0.1\\text{ m}. \\quad E_{net} = E_1 + E_2 = \\frac{k}{r^2}(|q_1| + |q_2|) = \\frac{9 \\times 10^{9}}{(0.1)^2} \\times (15 + 10) \\times 10^{-6} = \\mathbf{2.25 \\times 10^{7}\\text{ N/C}}. \\\\ \\text{Step 2:} F = qE = 20 \\times 10^{-3} \\times 2.25 \\times 10^{7} = \\mathbf{4.5 \\times 10^{5}\\text{ N}}.$$",
       },
     ],
   },
   {
-    sim: "S2",
+    sim: "Similar 2",
     items: [
       {
         question:
-          "The electrostatic force on a small sphere of charge 0.4 μC due to another small sphere of charge −0.8 μC in air separated by a distance d is 0.2 N. (a) Find the distance between the two spheres. (b) What is the magnitude and nature of force on the second sphere due to the first?",
+          "The electrostatic force on a small sphere of charge $0.4\\ \\mu\\text{C}$ due to another small sphere of charge $-0.8\\ \\mu\\text{C}$ in air separated by a distance d is $0.2\\text{ N}$. (a) Find the distance between the two spheres. (b) What is the magnitude and nature of force on the second sphere due to the first?",
         difficulty: "easy",
         marks: "5 marks",
         repetitions: [{ year: "2024", exam: "Exam 2" }],
         total: 1,
         answer:
-          "F = k q₁ q₂ / r². r² = (9×10⁹ × 0.4×10⁻⁶ × 0.8×10⁻⁶) / 0.2 = 0.0144. r = 0.12 m. The force is attractive (opposite charges), magnitude is 0.2 N (Newton's third law).",
+          "$$\\text{Step 1:} F = \\frac{k q_1 q_2}{d^2} \\Rightarrow 0.2 = \\frac{9 \\times 10^{9} \\times (0.4 \\times 10^{-6}) \\times (0.8 \\times 10^{-6})}{d^2}. \\\\ d^2 = 0.0144 \\Rightarrow d = \\mathbf{0.12\\text{ m}}. \\\\ \\text{Step 2:} \\text{ Force on second sphere is } \\mathbf{0.2\\text{ N}}, \\text{ attractive in nature (unlike charges).}$$",
       },
       {
         question:
-          "The electrostatic force on a metal sphere of charge 0.5 μC due to another identical metal sphere of charge −1.2 μC is 45 × 10⁻³ N. Find the distance between two spheres. Also find the force between the same two spheres when they are brought into contact and then placed at their initial position.",
+          "The electrostatic force on a metal sphere of charge $0.5\\ \\mu\\text{C}$ due to another identical metal sphere of charge $-1.2\\ \\mu\\text{C}$ is $45 \\times 10^{-3}\\text{ N}$. Find the distance between two spheres. Also find the force between the same two spheres when they are brought into contact and then placed at their initial position.",
         difficulty: "easy",
         marks: "5 marks",
         repetitions: [{ year: "2024", exam: "Exam 3" }],
         total: 1,
         answer:
-          "r² = (9×10⁹ × 0.5×10⁻⁶ × 1.2×10⁻⁶) / 45×10⁻³ = 0.12. r ≈ 0.346 m. After contact, q = (0.5 − 1.2)/2 = −0.35 μC. New Force F = (9×10⁹ × (0.35×10⁻⁶)²) / 0.12 ≈ 9.19×10⁻³ N (repulsive).",
+          "$$\\text{Step 1:} F = \\frac{k q_1 q_2}{d^2} \\Rightarrow 45 \\times 10^{-3} = \\frac{9 \\times 10^{9} \\times (0.5 \\times 10^{-6}) \\times (1.2 \\times 10^{-6})}{d^2}. \\\\ d^2 = 0.12 \\Rightarrow d = \\mathbf{0.346\\text{ m}}. \\\\ \\text{Step 2:} \\text{ After contact, } q = \\frac{0.5 + (-1.2)}{2} = -0.35\\ \\mu\\text{C}. \\\\ F = \\frac{9 \\times 10^{9} \\times (0.35 \\times 10^{-6})^2}{0.12} = \\mathbf{9.19 \\times 10^{-3}\\text{ N}} \\text{ (repulsive)}.$$",
       },
     ],
   },
   {
-    sim: "S3",
+    sim: "Similar 3",
     items: [
       {
         question:
-          "A pendulum bob of mass 80 mg and carrying charge 2 × 10⁻⁸ C is at rest at a certain angle with the vertical in a horizontal uniform electric field of 20,000 V m⁻¹. Find the tension in the thread of the pendulum and the angle it makes with the vertical.",
+          "A pendulum bob of mass $80\\text{ mg}$ and carrying charge $2 \\times 10^{-8}\\text{ C}$ is rest at a certain angle with the vertical in a horizontal uniform electric field of $20,000\\text{ V m}^{-1}$. Find the tension in the thread of the pendulum and the angle it makes with the vertical.",
         difficulty: "easy",
         marks: "5 marks",
         repetitions: [{ year: "2027", exam: "Model Paper 4" }],
         total: 1,
         answer:
-          "qE = (2×10⁻⁸)(20000) = 4×10⁻⁴ N. mg = (80×10⁻⁶)(10) = 8×10⁻⁴ N. tanθ = qE/mg = 0.5 ⇒ θ = 26.56°. Tension T = √((qE)² + (mg)²) = √((4×10⁻⁴)² + (8×10⁻⁴)²) ≈ 8.94×10⁻⁴ N.",
+          "$$\\text{Step 1:} \\text{ Electric force } F_e = qE = 2 \\times 10^{-8} \\times 20,000 = 4 \\times 10^{-4}\\text{ N}. \\text{ Weight } mg = 80 \\times 10^{-6} \\times 9.8 = 7.84 \\times 10^{-4}\\text{ N}. \\\\ \\text{Step 2:} \\tan \\theta = \\frac{F_e}{mg} = \\frac{4 \\times 10^{-4}}{7.84 \\times 10^{-4}} = 0.51 \\Rightarrow \\theta = \\mathbf{27^\\circ}. \\\\ \\text{Step 3:} T = \\sqrt{(mg)^2 + F_e^2} = \\sqrt{(7.84 \\times 10^{-4})^2 + (4 \\times 10^{-4})^2} = \\mathbf{8.8 \\times 10^{-4}\\text{ N}}.$$",
       },
     ],
   },
