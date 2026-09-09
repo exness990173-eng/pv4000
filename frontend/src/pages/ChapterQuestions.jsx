@@ -249,7 +249,7 @@ export default function ChapterQuestions() {
       )}
 
       {zoom && <ImageZoomModal src={zoom.src} alt={zoom.alt} onClose={() => setZoom(null)} />}
-      {showSim && <SimilarityModal groups={simGroups} chapterName={chapterName} onClose={() => setShowSim(false)} />}
+      {showSim && <SimilarityModal groups={simGroups} chapterName={chapterName} markLabel={markLabel} onClose={() => setShowSim(false)} />}
     </div>
   );
 }

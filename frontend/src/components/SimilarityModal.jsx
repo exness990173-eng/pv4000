@@ -9,7 +9,7 @@ const DIFF_COLORS = {
 };
 
 // Full-screen (mobile-first) overlay listing questions grouped by "similarity".
-export default function SimilarityModal({ groups, chapterName, onClose }) {
+export default function SimilarityModal({ groups, chapterName, markLabel, onClose }) {
   const [open, setOpen] = React.useState({}); // { key: bool } -> answer revealed
 
   React.useEffect(() => {
@@ -31,7 +31,7 @@ export default function SimilarityModal({ groups, chapterName, onClose }) {
           <Star className="h-4 w-4 fill-amber-600 text-amber-700" />
           <div className="min-w-0">
             <p className="truncate text-sm font-black uppercase tracking-wide text-amber-900">Similar Questions</p>
-            <p className="truncate text-[11px] font-semibold text-amber-800/80">{chapterName} · 5M Numericals</p>
+            <p className="truncate text-[11px] font-semibold text-amber-800/80">{chapterName}{markLabel ? ` · ${markLabel}` : ""}</p>
           </div>
           <button
             onClick={onClose}
