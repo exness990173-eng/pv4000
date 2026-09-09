@@ -420,6 +420,114 @@ const ECP_3M = [
   },
 ];
 
+const ECP_NUMERIC = [
+  {
+    sim: "Similar 1",
+    items: [
+      {
+        question:
+          "Two capacitors of capacitances $3\\text{ pF}$ and $7\\text{ pF}$ are connected in series and the combination is connected to a source of emf $10\\text{ V}$. Calculate the effective capacitance of the combination. Also find the potential difference across each capacitor.",
+        difficulty: "easy",
+        marks: "5 marks",
+        repetitions: [{ year: "2023", exam: "Supplement 1" }],
+        total: 1,
+        answer:
+          "$$\\text{Step 1:} \\text{ For series, } \\frac{1}{C_{eq}} = \\frac{1}{3} + \\frac{1}{7} = \\frac{10}{21}\\text{ pF. So } C_{eq} = 2.1\\text{ pF}. \\\\ \\text{Step 2:} \\text{ Charge on each capacitor } Q = C_{eq} \\times V = 2.1\\text{ pF} \\times 10\\text{ V} = 21\\text{ pC}. \\\\ \\text{Step 3:} V_1 = \\frac{Q}{C_1} = \\frac{21}{3} = \\mathbf{7\\text{ V}}; \\quad V_2 = \\frac{Q}{C_2} = \\frac{21}{7} = \\mathbf{3\\text{ V}}.$$",
+      },
+      {
+        question:
+          "Three capacitors of capacitances $2\\text{ pF}$, $3\\text{ pF}$ and $4\\text{ pF}$ are connected in parallel. (a) What is the total capacitance of the combination? (b) Determine the charge on each capacitor, if the combination is connected to a $100\\text{ V}$ supply.",
+        difficulty: "easy",
+        marks: "5 marks",
+        repetitions: [{ year: "2023", exam: "Supplement 2" }],
+        total: 1,
+        answer:
+          "$$\\text{Step 1:} C_{total} = C_1 + C_2 + C_3 = 2 + 3 + 4 = \\mathbf{9\\text{ pF}}. \\\\ \\text{Step 2:} Q = CV. \\quad Q_1 = 2 \\times 100 = \\mathbf{200\\text{ pC}}; \\quad Q_2 = 3 \\times 100 = \\mathbf{300\\text{ pC}}; \\quad Q_3 = 4 \\times 100 = \\mathbf{400\\text{ pC}}.$$",
+      },
+      {
+        question:
+          "A network of four $9\\ \\mu\\text{F}$ capacitors is connected to a $300\\text{ V}$ supply as shown in figure. Determine a) equivalent capacitance of the network and b) the charge on each capacitor.",
+        difficulty: "easy",
+        marks: "5 marks",
+        repetitions: [{ year: "2025", exam: "Exam 2" }],
+        total: 1,
+        answer:
+          "$$\\text{Step 1:} \\text{ (Assuming the standard diagram: two parallel pairs in series) } \\\\ \\text{Parallel pair 1 } = 9 + 9 = 18\\ \\mu\\text{F}; \\quad \\text{Parallel pair 2 } = 9 + 9 = 18\\ \\mu\\text{F}. \\\\ \\text{Step 2:} \\text{ Series: } \\frac{1}{C_{eq}} = \\frac{1}{18} + \\frac{1}{18} = \\frac{2}{18}. \\quad C_{eq} = \\mathbf{9\\ \\mu\\text{F}}. \\\\ \\text{Step 3:} \\text{ Total } Q = C_{eq} \\times V = 9\\ \\mu\\text{F} \\times 300\\text{ V} = 2700\\ \\mu\\text{C}. \\\\ \\text{Step 4:} \\text{ Voltage across each branch } = 150\\text{ V}. \\text{ Charge on each individual capacitor } = 9\\ \\mu\\text{F} \\times 150\\text{ V} = \\mathbf{1350\\ \\mu\\text{C}}.$$",
+      },
+      {
+        question:
+          "Two capacitors of capacitances $3\\ \\mu\\text{F}$ and $6\\ \\mu\\text{F}$ are connected in series and the resulting combination is connected across a $300\\text{ V}$ battery. Calculate i) the effective capacitance of the combination; ii) the charge collected by each capacitor and iii) the energy stored in the $3\\ \\mu\\text{F}$ capacitor.",
+        difficulty: "easy",
+        marks: "5 marks",
+        repetitions: [{ year: "2027", exam: "Model Paper 5" }],
+        total: 1,
+        answer:
+          "$$\\text{Step 1:} \\frac{1}{C_{eq}} = \\frac{1}{3} + \\frac{1}{6} = \\frac{3}{6} \\Rightarrow C_{eq} = \\mathbf{2\\ \\mu\\text{F}}. \\\\ \\text{Step 2:} Q = C_{eq} \\times V = 2\\ \\mu\\text{F} \\times 300\\text{ V} = \\mathbf{600\\ \\mu\\text{C}}. \\\\ \\text{Step 3:} V \\text{ across } 3\\ \\mu\\text{F} = \\frac{600}{3} = 200\\text{ V}. \\text{ Energy } U = \\frac{1}{2} C V^2 = \\frac{1}{2} \\times 3\\ \\mu\\text{F} \\times (200)^2 = \\mathbf{0.06\\text{ J}} \\text{ (or } 60\\text{ mJ)}.$$",
+      },
+      {
+        question:
+          "A parallel plate capacitor has air between the plates. The area of the plates is $4\\text{ cm}^2$ and the distance between them is $2\\text{ mm}$. (a) Calculate the capacitance of the capacitor. (b) If this capacitor is connected to a $100\\text{ V}$ supply, find the magnitude of the charge on each plate and the energy stored in the capacitor. (Given: $\\varepsilon_0 = 8.854 \\times 10^{-12}\\text{ F m}^{-1}$)",
+        difficulty: "easy",
+        marks: "5 marks",
+        repetitions: [{ year: "2027", exam: "Model Paper 2" }],
+        total: 1,
+        answer:
+          "$$\\text{Step 1:} A = 4 \\times 10^{-4}\\text{ m}^2; \\quad d = 2 \\times 10^{-3}\\text{ m}. \\\\ C = \\frac{\\varepsilon_0 A}{d} = \\frac{(8.854 \\times 10^{-12} \\times 4 \\times 10^{-4})}{2 \\times 10^{-3}} = \\mathbf{1.77 \\times 10^{-12}\\text{ F}} \\text{ (or } 1.77\\text{ pF)}. \\\\ \\text{Step 2:} Q = CV = 1.77 \\times 10^{-12} \\times 100 = \\mathbf{1.77 \\times 10^{-10}\\text{ C}}. \\\\ \\text{Step 3:} U = \\frac{1}{2} C V^2 = \\frac{1}{2} \\times 1.77 \\times 10^{-12} \\times (100)^2 = \\mathbf{8.85 \\times 10^{-9}\\text{ J}}.$$",
+      },
+    ],
+  },
+  {
+    sim: "Similar 2",
+    items: [
+      {
+        question:
+          "Three point charges $+4\\ \\mu\\text{C}$, $-6\\ \\mu\\text{C}$ and $+8\\ \\mu\\text{C}$ are placed at the corners A, B and C respectively of a square ABCD of side $10\\text{ cm}$. Calculate the work done to transfer a point charge $+3\\ \\mu\\text{C}$ from the corner D to the centre O of the square. (Given $\\frac{1}{4\\pi\\varepsilon_0} = 9 \\times 10^{9}\\text{ Nm}^2/\\text{C}^2$)",
+        difficulty: "easy",
+        marks: "5 marks",
+        repetitions: [{ year: "2026", exam: "Exam 2" }],
+        total: 1,
+        answer:
+          "$$\\text{Step 1:} \\text{ Distance } AO = BO = CO = \\frac{0.1\\sqrt{2}}{2} = 0.05\\sqrt{2}\\text{ m}. \\\\ \\text{Step 2:} \\text{ Potential at D } (V_D): k \\times \\frac{(4 - 6 + 8)}{0.1} = 9 \\times 10^{9} \\times 10^{-6} \\times 60 = 5.4 \\times 10^{5}\\text{ V}. \\\\ \\text{Step 3:} \\text{ Potential at O } (V_O): k \\times \\frac{(4 - 6 + 8)}{0.05\\sqrt{2}} = 9 \\times 10^{9} \\times 10^{-6} \\times 84.85 = 7.64 \\times 10^{5}\\text{ V}. \\\\ \\text{Step 4:} \\text{ Work done } = q \\times (V_O - V_D) = 3 \\times 10^{-6} \\times (7.64 \\times 10^{5} - 5.4 \\times 10^{5}) = \\mathbf{0.67\\text{ J}}.$$",
+      },
+      {
+        question:
+          "Three point charges $3\\text{ nC}$, $-2\\text{ nC}$ and $4\\text{ nC}$ are placed at the vertices A, B and C of an equilateral triangle ABC of sides $0.2\\text{ m}$. Calculate the potential energy of the system. Also calculate the amount of work required to place the same charges at the vertices of an equilateral triangle of side $0.1\\text{ m}$. (Take: $\\frac{1}{4\\pi\\varepsilon_0} = 9 \\times 10^{9}\\text{ Nm}^2\\text{C}^{-2}$)",
+        difficulty: "easy",
+        marks: "5 marks",
+        repetitions: [{ year: "2027", exam: "Model Paper 3" }],
+        total: 1,
+        answer:
+          "$$\\text{Step 1:} U = \\frac{k}{r} \\times (q_1q_2 + q_2q_3 + q_3q_1). \\text{ Sum } = (-6 - 8 + 12) = -2\\text{ nC}^2. \\\\ \\text{Step 2:} U_i (r=0.2\\text{m}) = \\frac{9 \\times 10^{9}}{0.2} \\times (-2 \\times 10^{-18}) = \\mathbf{-9 \\times 10^{-8}\\text{ J}}. \\\\ \\text{Step 3:} U_f (r=0.1\\text{m}) = \\frac{9 \\times 10^{9}}{0.1} \\times (-2 \\times 10^{-18}) = \\mathbf{-18 \\times 10^{-8}\\text{ J}}. \\\\ \\text{Step 4:} \\text{ Work required } = U_f - U_i = -18 \\times 10^{-8} - (-9 \\times 10^{-8}) = \\mathbf{-9 \\times 10^{-8}\\text{ J}}.$$",
+      },
+    ],
+  },
+  {
+    sim: "Similar 3",
+    items: [
+      {
+        question:
+          "Charges $2\\ \\mu\\text{C}$, $4\\ \\mu\\text{C}$ and $6\\ \\mu\\text{C}$ are placed at the three corners A, B and C respectively of a square ABCD of side $X\\text{ metre}$. Find the charge that must be placed at the fourth corner so that the total potential at the centre of the square is zero.",
+        difficulty: "easy",
+        marks: "5 marks",
+        repetitions: [{ year: "2023", exam: "Main Exam" }],
+        total: 1,
+        answer:
+          "$$\\text{Step 1:} \\text{ Distance from center to each corner } = \\frac{X}{\\sqrt{2}}\\text{ m}. \\\\ \\text{Step 2:} \\text{ Potential at center } V = \\frac{k}{X/\\sqrt{2}} \\times (Q_A + Q_B + Q_C + Q_D) = 0. \\\\ \\text{Step 3:} \\text{ Therefore, } (2 + 4 + 6) + Q_D = 0 \\Rightarrow \\mathbf{Q_D = -12\\ \\mu\\text{C}}.$$",
+      },
+      {
+        question:
+          "Two charges $5 \\times 10^{-8}\\text{ C}$ and $-3 \\times 10^{-8}\\text{ C}$ are located $16\\text{ cm}$ apart in vacuum. Find the positions along the line passing through the two charges where the electric potential is zero.",
+        difficulty: "easy",
+        marks: "5 marks",
+        repetitions: [{ year: "2026", exam: "Exam 1" }],
+        total: 1,
+        answer:
+          "$$\\text{Step 1:} \\text{ Point between charges: Let } x \\text{ be distance from } 5 \\times 10^{-8}. \\quad k \\times \\left( \\frac{5}{x} - \\frac{3}{0.16 - x} \\right) = 0. \\\\ \\text{Step 2:} 5(0.16 - x) = 3x \\Rightarrow 0.8 - 5x = 3x \\Rightarrow 8x = 0.8 \\Rightarrow x = \\mathbf{0.1\\text{ m (10 cm)}} \\text{ from } 5\\ \\mu\\text{C}. \\\\ \\text{Step 3:} \\text{ Point outside (to the right of } -3\\ \\mu\\text{C): } \\frac{5}{x} = \\frac{3}{x - 0.16} \\Rightarrow 5x - 0.8 = 3x \\Rightarrow 2x = 0.8 \\Rightarrow \\mathbf{x = 0.4\\text{ m (40 cm)}} \\text{ from } 5\\ \\mu\\text{C}.$$",
+      },
+    ],
+  },
+];
+
 const ECF_2M = [
   {
     sim: "Similar 1",
@@ -641,6 +749,8 @@ export const SIMILARITY_BANK = {
   "Electrostatic Potential & Capacitance:2m": ECP_2M,
   "Electrostatic Potential and Capacitance:3m": ECP_3M,
   "Electrostatic Potential & Capacitance:3m": ECP_3M,
+  "Electrostatic Potential and Capacitance:numeric": ECP_NUMERIC,
+  "Electrostatic Potential & Capacitance:numeric": ECP_NUMERIC,
 };
 
 export function resolveSimilarity({ chapterName, mark }) {
