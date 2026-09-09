@@ -321,6 +321,105 @@ const ECP_2M = [
   },
 ];
 
+const ECP_3M = [
+  {
+    sim: "Similar 1",
+    items: [
+      {
+        question:
+          "What is a capacitor? Mention two factors on which the capacitance of a parallel plate capacitor depends.",
+        difficulty: "easy",
+        marks: "3 marks",
+        repetitions: [
+          { year: "2027", exam: "Model Paper 1" },
+          { year: "2026", exam: "Exam 1" },
+        ],
+        total: 2,
+        answer: "",
+      },
+      {
+        question:
+          "Mention any three important results regarding the electrostatics of conductors.",
+        difficulty: "easy",
+        marks: "3 marks",
+        repetitions: [
+          { year: "2027", exam: "Model Paper 2" },
+          { year: "2026", exam: "Exam 2" },
+        ],
+        total: 2,
+        answer: "",
+      },
+      {
+        question:
+          "a) What is meant by an equipotential surface? b) Draw equipotential surfaces for uniform electric field and a point charge.",
+        difficulty: "easy",
+        marks: "3 marks",
+        repetitions: [{ year: "2025", exam: "Exam 2" }],
+        total: 1,
+        answer: "",
+      },
+    ],
+  },
+  {
+    sim: "Similar 2",
+    items: [
+      {
+        question:
+          "Derive the expression for the equivalent capacitance of two capacitors connected in parallel. / Obtain an expression for effective capacitance of two capacitors connected in parallel.",
+        difficulty: "easy",
+        marks: "3 marks",
+        repetitions: [
+          { year: "2025", exam: "Exam 1" },
+          { year: "2025", exam: "Exam 3" },
+        ],
+        total: 2,
+        answer: "",
+      },
+      {
+        question:
+          "Derive an expression for the potential energy of a system of two point charges in the absence of external electric field. / Obtain an expression for potential energy of system of two charges in the absence of electric field.",
+        difficulty: "easy",
+        marks: "3 marks",
+        repetitions: [
+          { year: "2027", exam: "Model Paper 4" },
+          { year: "2024", exam: "Exam 3" },
+        ],
+        total: 2,
+        answer: "",
+      },
+      {
+        question: "Derive the relation between electric field and electric potential.",
+        difficulty: "easy",
+        marks: "3 marks",
+        repetitions: [
+          { year: "2027", exam: "Model Paper 5" },
+          { year: "2024", exam: "Exam 2" },
+        ],
+        total: 2,
+        answer: "",
+      },
+      {
+        question:
+          "Deduce $E = -\\frac{dV}{dx}$, where the terms have usual meaning.",
+        difficulty: "easy",
+        marks: "3 marks",
+        repetitions: [{ year: "2024", exam: "Exam 1" }],
+        total: 1,
+        answer: "",
+      },
+      {
+        question:
+          "Obtain the expression for equivalent capacitance of two capacitors connected in series.",
+        difficulty: "easy",
+        marks: "3 marks",
+        repetitions: [{ year: "2027", exam: "Model Paper 3" }],
+        total: 1,
+        answer: "",
+      },
+    ],
+  },
+];
+
 const ECF_2M = [
   {
     sim: "Similar 1",
@@ -540,6 +639,8 @@ export const SIMILARITY_BANK = {
   "Electrostatic Potential & Capacitance:5m": ECP_5M_THEORY,
   "Electrostatic Potential and Capacitance:2m": ECP_2M,
   "Electrostatic Potential & Capacitance:2m": ECP_2M,
+  "Electrostatic Potential and Capacitance:3m": ECP_3M,
+  "Electrostatic Potential & Capacitance:3m": ECP_3M,
 };
 
 export function resolveSimilarity({ chapterName, mark }) {
