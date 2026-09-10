@@ -221,6 +221,7 @@ const ECP_2M = [
           "Mention two properties of equipotential surfaces. / Write two properties of equipotential surfaces.",
         difficulty: "easy",
         marks: "2 marks",
+        imp: true,
         repetitions: [
           { year: "2023", exam: "Supplement 1" },
           { year: "2023", exam: "Supplement 2" },
@@ -234,6 +235,7 @@ const ECP_2M = [
           "On what factors does the capacitance of a parallel plate capacitor depend? / Name any two factors on which the capacitance of a parallel plate capacitor depends.",
         difficulty: "easy",
         marks: "2 marks",
+        imp: true,
         repetitions: [
           { year: "2023", exam: "Main Exam" },
           { year: "2026", exam: "Exam 2" },
@@ -246,6 +248,7 @@ const ECP_2M = [
           "Define electric potential energy of a system of charges. What happens to the potential energy of a system of two unlike charges when the distance between them is increased (assume there is no external electric field)?",
         difficulty: "easy",
         marks: "2 marks",
+        imp: true,
         repetitions: [{ year: "2025", exam: "Exam 1" }],
         total: 1,
         answer: "",

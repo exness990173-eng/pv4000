@@ -73,6 +73,11 @@ export default function SimilarityModal({ groups, chapterName, markLabel, onClos
                               {q.difficulty}
                             </span>
                             <span className="rounded bg-blue-100 px-1.5 py-0.5 text-[10px] font-bold text-blue-700">{q.marks}</span>
+                            {q.imp && (
+                              <span className="rounded bg-red-100 px-1.5 py-0.5 text-[10px] font-black uppercase tracking-wide text-red-600 ring-1 ring-inset ring-red-300">
+                                Imp
+                              </span>
+                            )}
                             <span className="ml-auto inline-flex items-center gap-1 rounded bg-slate-100 px-1.5 py-0.5 text-[10px] font-bold text-slate-600">
                               <Repeat className="h-3 w-3" /> ×{q.total}
                             </span>
