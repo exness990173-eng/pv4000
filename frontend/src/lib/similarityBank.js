@@ -181,15 +181,6 @@ const ECP_5M_THEORY = [
           "For air:\n\n$E = \\frac{\\sigma}{\\varepsilon_0} = \\frac{Q}{A\\varepsilon_0}$\n\n$V = E \\cdot d = \\frac{Qd}{A\\varepsilon_0}$\n\n$C = \\frac{Q}{V} = \\frac{\\varepsilon_0 A}{d}$\n\nWith dielectric:\n\n$C = \\frac{K\\varepsilon_0 A}{d}$",
       },
       {
-        question: "What are polar and non-polar molecules?",
-        difficulty: "easy",
-        marks: "5 marks",
-        repetitions: [{ year: "2024", exam: "Exam 1 (a)" }],
-        total: 1,
-        answer:
-          "Polar molecules have a permanent electric dipole moment due to the asymmetric distribution of charges (e.g., $H_2O$). Non-polar molecules have a zero net dipole moment as the centers of positive and negative charges coincide (e.g., $CO_2$, $CH_4$).",
-      },
-      {
         question:
           "Derive an expression for equivalent capacitance of two capacitors connected in series.",
         difficulty: "easy",
@@ -198,15 +189,6 @@ const ECP_5M_THEORY = [
         total: 1,
         answer:
           "In series, the charge $Q$ is the same. Voltage $V = V_1 + V_2$.\n\n$\\frac{Q}{C_{eq}} = \\frac{Q}{C_1} + \\frac{Q}{C_2}$. Therefore,\n\n$\\frac{1}{C_{eq}} = \\frac{1}{C_1} + \\frac{1}{C_2}$",
-      },
-      {
-        question: "Write any two properties of the equipotential surface.",
-        difficulty: "easy",
-        marks: "5 marks",
-        repetitions: [{ year: "2024", exam: "Exam 3 (b)" }],
-        total: 1,
-        answer:
-          "1. No two equipotential surfaces can intersect each other.\n2. The electric field lines are always perpendicular to the equipotential surfaces.",
       },
     ],
   },
@@ -452,6 +434,16 @@ const ECP_NUMERIC = [
       },
       {
         question:
+          "A network of four $9\\ \\mu\\text{F}$ capacitors is connected to a $300\\text{ V}$ supply as shown in figure. Determine a) equivalent capacitance of the network and b) the charge on each capacitor.",
+        difficulty: "easy",
+        marks: "5 marks",
+        repetitions: [{ year: "2025", exam: "Exam 2" }],
+        total: 1,
+        answer:
+          "$$\\text{Step 1:} \\text{ (Assuming the standard diagram: two parallel pairs in series) } \\\\ \\text{Parallel pair 1 } = 9 + 9 = 18\\ \\mu\\text{F}; \\quad \\text{Parallel pair 2 } = 9 + 9 = 18\\ \\mu\\text{F}. \\\\ \\text{Step 2:} \\text{ Series: } \\frac{1}{C_{eq}} = \\frac{1}{18} + \\frac{1}{18} = \\frac{2}{18}. \\quad C_{eq} = \\mathbf{9\\ \\mu\\text{F}}. \\\\ \\text{Step 3:} \\text{ Total } Q = C_{eq} \\times V = 9\\ \\mu\\text{F} \\times 300\\text{ V} = 2700\\ \\mu\\text{C}. \\\\ \\text{Step 4:} \\text{ Voltage across each branch } = 150\\text{ V}. \\text{ Charge on each individual capacitor } = 9\\ \\mu\\text{F} \\times 150\\text{ V} = \\mathbf{1350\\ \\mu\\text{C}}.$$",
+      },
+      {
+        question:
           "Two capacitors of capacitances $3\\ \\mu\\text{F}$ and $6\\ \\mu\\text{F}$ are connected in series and the resulting combination is connected across a $300\\text{ V}$ battery. Calculate i) the effective capacitance of the combination; ii) the charge collected by each capacitor and iii) the energy stored in the $3\\ \\mu\\text{F}$ capacitor.",
         difficulty: "easy",
         marks: "5 marks",
@@ -459,6 +451,16 @@ const ECP_NUMERIC = [
         total: 1,
         answer:
           "$$\\text{Step 1:} \\frac{1}{C_{eq}} = \\frac{1}{3} + \\frac{1}{6} = \\frac{3}{6} \\Rightarrow C_{eq} = \\mathbf{2\\ \\mu\\text{F}}. \\\\ \\text{Step 2:} Q = C_{eq} \\times V = 2\\ \\mu\\text{F} \\times 300\\text{ V} = \\mathbf{600\\ \\mu\\text{C}}. \\\\ \\text{Step 3:} V \\text{ across } 3\\ \\mu\\text{F} = \\frac{600}{3} = 200\\text{ V}. \\text{ Energy } U = \\frac{1}{2} C V^2 = \\frac{1}{2} \\times 3\\ \\mu\\text{F} \\times (200)^2 = \\mathbf{0.06\\text{ J}} \\text{ (or } 60\\text{ mJ)}.$$",
+      },
+      {
+        question:
+          "A parallel plate capacitor has air between the plates. The area of the plates is $4\\text{ cm}^2$ and the distance between them is $2\\text{ mm}$. (a) Calculate the capacitance of the capacitor. (b) If this capacitor is connected to a $100\\text{ V}$ supply, find the magnitude of the charge on each plate and the energy stored in the capacitor. (Given: $\\varepsilon_0 = 8.854 \\times 10^{-12}\\text{ F m}^{-1}$)",
+        difficulty: "easy",
+        marks: "5 marks",
+        repetitions: [{ year: "2027", exam: "Model Paper 2" }],
+        total: 1,
+        answer:
+          "$$\\text{Step 1:} A = 4 \\times 10^{-4}\\text{ m}^2; \\quad d = 2 \\times 10^{-3}\\text{ m}. \\\\ C = \\frac{\\varepsilon_0 A}{d} = \\frac{(8.854 \\times 10^{-12} \\times 4 \\times 10^{-4})}{2 \\times 10^{-3}} = \\mathbf{1.77 \\times 10^{-12}\\text{ F}} \\text{ (or } 1.77\\text{ pF)}. \\\\ \\text{Step 2:} Q = CV = 1.77 \\times 10^{-12} \\times 100 = \\mathbf{1.77 \\times 10^{-10}\\text{ C}}. \\\\ \\text{Step 3:} U = \\frac{1}{2} C V^2 = \\frac{1}{2} \\times 1.77 \\times 10^{-12} \\times (100)^2 = \\mathbf{8.85 \\times 10^{-9}\\text{ J}}.$$",
       },
     ],
   },
