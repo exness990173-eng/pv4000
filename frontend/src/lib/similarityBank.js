@@ -169,26 +169,44 @@ const ECP_5M_THEORY = [
       },
       {
         question:
-          "a) What are polar and non-polar molecules? (2)\nb) Derive the expression for the capacitance of a parallel plate capacitor. (3)",
+          "Derive the expression for the capacitance of a parallel plate capacitor with air between the plates. Also write the general expression for the capacitance of a parallel plate capacitor with a dielectric medium.",
         difficulty: "easy",
         marks: "5 marks",
         repetitions: [
-          { year: "2024", exam: "Exam 1" },
           { year: "2027", exam: "Model Paper 4" },
+          { year: "2024", exam: "Exam 1 (b)" },
         ],
         total: 2,
         answer:
-          "(a) Polar molecules have a permanent electric dipole moment due to the asymmetric distribution of charges (e.g., $H_2O$). Non-polar molecules have a zero net dipole moment as the centers of positive and negative charges coincide (e.g., $CO_2$, $CH_4$).\n\n(b) For a parallel plate capacitor with air between the plates:\n\n$E = \\frac{\\sigma}{\\varepsilon_0} = \\frac{Q}{A\\varepsilon_0}$\n\n$V = E \\cdot d = \\frac{Qd}{A\\varepsilon_0}$\n\n$C = \\frac{Q}{V} = \\frac{\\varepsilon_0 A}{d}$",
+          "For air:\n\n$E = \\frac{\\sigma}{\\varepsilon_0} = \\frac{Q}{A\\varepsilon_0}$\n\n$V = E \\cdot d = \\frac{Qd}{A\\varepsilon_0}$\n\n$C = \\frac{Q}{V} = \\frac{\\varepsilon_0 A}{d}$\n\nWith dielectric:\n\n$C = \\frac{K\\varepsilon_0 A}{d}$",
+      },
+      {
+        question: "What are polar and non-polar molecules?",
+        difficulty: "easy",
+        marks: "5 marks",
+        repetitions: [{ year: "2024", exam: "Exam 1 (a)" }],
+        total: 1,
+        answer:
+          "Polar molecules have a permanent electric dipole moment due to the asymmetric distribution of charges (e.g., $H_2O$). Non-polar molecules have a zero net dipole moment as the centers of positive and negative charges coincide (e.g., $CO_2$, $CH_4$).",
       },
       {
         question:
-          "a) Derive an expression for equivalent capacitance of two capacitors connected in series. (3)\nb) Write any two properties of the equipotential surface. (2)",
+          "Derive an expression for equivalent capacitance of two capacitors connected in series.",
         difficulty: "easy",
         marks: "5 marks",
-        repetitions: [{ year: "2024", exam: "Exam 3" }],
+        repetitions: [{ year: "2024", exam: "Exam 3 (a)" }],
         total: 1,
         answer:
-          "(a) In series, the charge $Q$ is the same. Voltage $V = V_1 + V_2$.\n\n$\\frac{Q}{C_{eq}} = \\frac{Q}{C_1} + \\frac{Q}{C_2}$. Therefore, $\\frac{1}{C_{eq}} = \\frac{1}{C_1} + \\frac{1}{C_2}$.\n\n(b) 1. No two equipotential surfaces can intersect each other.\n2. The electric field lines are always perpendicular to the equipotential surfaces.",
+          "In series, the charge $Q$ is the same. Voltage $V = V_1 + V_2$.\n\n$\\frac{Q}{C_{eq}} = \\frac{Q}{C_1} + \\frac{Q}{C_2}$. Therefore,\n\n$\\frac{1}{C_{eq}} = \\frac{1}{C_1} + \\frac{1}{C_2}$",
+      },
+      {
+        question: "Write any two properties of the equipotential surface.",
+        difficulty: "easy",
+        marks: "5 marks",
+        repetitions: [{ year: "2024", exam: "Exam 3 (b)" }],
+        total: 1,
+        answer:
+          "1. No two equipotential surfaces can intersect each other.\n2. The electric field lines are always perpendicular to the equipotential surfaces.",
       },
     ],
   },
