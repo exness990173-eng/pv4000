@@ -1,5 +1,5 @@
 import React from "react";
-import { X, Star, Repeat, ChevronDown } from "lucide-react";
+import { X, Star, Repeat, ChevronDown, ChevronLeft, ChevronRight } from "lucide-react";
 import { MathText } from "@/components/MathText";
 
 const DIFF_COLORS = {
@@ -11,6 +11,10 @@ const DIFF_COLORS = {
 // Full-screen (mobile-first) overlay listing questions grouped by "similarity".
 export default function SimilarityModal({ groups, chapterName, markLabel, onClose }) {
   const [open, setOpen] = React.useState({}); // { key: bool } -> answer revealed
+  const [gi, setGi] = React.useState(0); // current similar-group index
+  const bodyRef = React.useRef(null);
+  const total = groups ? groups.length : 0;
+  const goTo = (n) => { setGi(n); if (bodyRef.current) bodyRef.current.scrollTo(0, 0); };
 
   React.useEffect(() => {
     const prev = document.body.style.overflow;
@@ -43,14 +47,14 @@ export default function SimilarityModal({ groups, chapterName, markLabel, onClos
         </div>
 
         {/* body */}
-        <div className="flex-1 overflow-y-auto px-3 py-4 md:px-5">
+        <div ref={bodyRef} className="flex-1 overflow-y-auto px-3 py-4 md:px-5">
           {!groups || groups.length === 0 ? (
             <div className="rounded-2xl border border-dashed border-slate-300 bg-white py-16 text-center">
               <p className="text-sm font-semibold text-slate-600">No similar questions added yet.</p>
             </div>
           ) : (
             <div className="space-y-5">
-              {groups.map((grp) => (
+              {[groups[Math.min(gi, total - 1)]].map((grp) => (
                 <section key={grp.sim}>
                   <div className="mb-2 flex items-center gap-2">
                     <span className="rounded-lg bg-gradient-to-r from-amber-400 to-yellow-500 px-2.5 py-1 text-xs font-black uppercase tracking-wide text-amber-950 shadow-sm">{grp.sim}</span>
@@ -104,6 +108,27 @@ export default function SimilarityModal({ groups, chapterName, markLabel, onClos
             </div>
           )}
         </div>
+
+        {/* footer: Previous / Next between similar groups */}
+        {groups && total > 1 && (
+          <div className="flex items-center gap-2 border-t border-slate-200 bg-white px-4 py-3">
+            <button
+              disabled={gi === 0}
+              onClick={() => goTo(gi - 1)}
+              className="flex items-center gap-1 rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-bold text-slate-600 transition-all hover:bg-slate-50 disabled:opacity-40"
+            >
+              <ChevronLeft className="h-4 w-4" /> Previous
+            </button>
+            <span className="mx-auto text-xs font-bold text-slate-400">{Math.min(gi, total - 1) + 1} / {total}</span>
+            <button
+              disabled={gi >= total - 1}
+              onClick={() => goTo(gi + 1)}
+              className="flex items-center gap-1 rounded-lg bg-amber-500 px-4 py-2 text-sm font-bold text-white transition-all hover:bg-amber-600 disabled:opacity-40"
+            >
+              Next <ChevronRight className="h-4 w-4" />
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );
