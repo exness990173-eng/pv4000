@@ -88,7 +88,7 @@ export default function SimilarityModal({ groups, chapterName, markLabel, onClos
                           <button
                             type="button"
                             onClick={() => setOpen((o) => ({ ...o, [key]: !o[key] }))}
-                            className="mt-2 inline-flex items-center gap-1.5 rounded-lg bg-gradient-to-r from-amber-400 to-yellow-500 px-3 py-1.5 text-[11px] font-bold text-amber-950 shadow-sm transition hover:from-amber-500 hover:to-yellow-600"
+                            className="mt-2 inline-flex items-center gap-1.5 rounded-full bg-gradient-to-b from-blue-500 to-blue-600 px-3.5 py-1.5 text-[11px] font-bold text-white shadow-sm ring-1 ring-inset ring-white/25 transition hover:from-blue-600 hover:to-blue-700"
                           >
                             <ChevronDown className={`h-3.5 w-3.5 transition-transform ${open[key] ? "rotate-180" : ""}`} />
                             {open[key] ? "Hide Answer" : "View Answer"}
