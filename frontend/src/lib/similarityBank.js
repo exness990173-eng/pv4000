@@ -566,6 +566,16 @@ const ECF_2M = [
           "1. Electric field lines start from positive charges and terminate on negative charges.\n2. Two electric field lines never intersect each other.",
       },
       {
+        question: "State and explain Coulomb's law in electrostatics.",
+        difficulty: "easy",
+        marks: "2 marks",
+        imp: true,
+        repetitions: [{ year: "2025", exam: "Exam 3" }],
+        total: 1,
+        answer:
+          "The electrostatic force between two point charges is directly proportional to the product of the magnitudes of the charges and inversely proportional to the square of the distance between them.\n\nFormula: $F = \\frac{k q_1 q_2}{r^2}$.",
+      },
+      {
         question: "What is electrostatic shielding? Mention one use of it.",
         difficulty: "easy",
         marks: "2 marks",
@@ -601,15 +611,6 @@ const ECF_2M = [
         total: 1,
         answer:
           "1. Magnitude of the source charge ($q$).\n2. Distance ($r$) from the source charge to the point.\n\n(Formula: $E = \\frac{kq}{r^2}$)",
-      },
-      {
-        question: "State and explain Coulomb's law in electrostatics.",
-        difficulty: "easy",
-        marks: "2 marks",
-        repetitions: [{ year: "2025", exam: "Exam 3" }],
-        total: 1,
-        answer:
-          "The electrostatic force between two point charges is directly proportional to the product of the magnitudes of the charges and inversely proportional to the square of the distance between them.\n\nFormula: $F = \\frac{k q_1 q_2}{r^2}$.",
       },
       {
         question: "Define electric flux through an area element. Mention its SI unit.",
