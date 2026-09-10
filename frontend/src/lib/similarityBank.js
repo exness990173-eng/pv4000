@@ -561,6 +561,15 @@ const ECF_2M = [
           "1. Electric field lines start from positive charges and terminate on negative charges.\n2. Two electric field lines never intersect each other.",
       },
       {
+        question: "What is electrostatic shielding? Mention one use of it.",
+        difficulty: "easy",
+        marks: "2 marks",
+        repetitions: [{ year: "2026", exam: "Exam 1" }],
+        total: 1,
+        answer:
+          "Electrostatic shielding is the phenomenon where the electric field inside a hollow conductor is zero, so no external electric field can penetrate it.\n\nOne use is to protect sensitive electronic circuits and instruments from external electric fields.",
+      },
+      {
         question: "Define electric field at a point. What is meant by 'source charge'?",
         difficulty: "easy",
         marks: "2 marks",
@@ -613,15 +622,6 @@ const ECF_2M = [
         total: 1,
         answer:
           "Linear charge density is defined as the amount of electric charge per unit length ($\\lambda = \\frac{q}{l}$).\nIts SI unit is Coulomb per meter ($\\text{C/m}$).",
-      },
-      {
-        question: "What is electrostatic shielding? Mention one use of it.",
-        difficulty: "easy",
-        marks: "2 marks",
-        repetitions: [{ year: "2026", exam: "Exam 1" }],
-        total: 1,
-        answer:
-          "Electrostatic shielding is the phenomenon where the electric field inside a hollow conductor is zero, so no external electric field can penetrate it.\n\nOne use is to protect sensitive electronic circuits and instruments from external electric fields.",
       },
     ],
   },
