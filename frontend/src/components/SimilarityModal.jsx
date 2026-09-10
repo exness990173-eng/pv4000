@@ -64,7 +64,7 @@ export default function SimilarityModal({ groups, chapterName, markLabel, onClos
                     {grp.items.map((q, i) => {
                       const key = `${grp.sim}-${i}`;
                       return (
-                        <div key={key} className="rounded-xl border border-slate-200 bg-white p-3 shadow-sm">
+                        <div key={key} className={`rounded-xl border p-3 shadow-sm ${q.imp ? "border-amber-200 bg-amber-50" : "border-slate-200 bg-white"}`}>
                           <div className="mb-2 flex flex-wrap items-center gap-1.5">
                             <span className="inline-flex h-5 w-5 items-center justify-center rounded-full border-2 border-blue-600 text-[11px] font-black text-blue-700">
                               {i + 1}
