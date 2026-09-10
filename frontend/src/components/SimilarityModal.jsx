@@ -66,6 +66,9 @@ export default function SimilarityModal({ groups, chapterName, markLabel, onClos
                       return (
                         <div key={key} className="rounded-xl border border-slate-200 bg-white p-3 shadow-sm">
                           <div className="mb-2 flex flex-wrap items-center gap-1.5">
+                            <span className="inline-flex h-5 w-5 items-center justify-center rounded-full border-2 border-blue-600 text-[11px] font-black text-blue-700">
+                              {i + 1}
+                            </span>
                             <span className={`rounded px-1.5 py-0.5 text-[10px] font-bold ${DIFF_COLORS[q.difficulty] || DIFF_COLORS.easy}`}>
                               {q.difficulty}
                             </span>
