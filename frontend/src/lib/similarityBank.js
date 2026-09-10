@@ -298,6 +298,7 @@ const ECP_2M = [
           "Two point charges $5 \\times 10^{-6}\\text{ C}$ and $-3 \\times 10^{-6}\\text{ C}$ are located 10 cm apart. Find the point between the two charges where potential is zero.",
         difficulty: "easy",
         marks: "2 marks",
+        imp: true,
         repetitions: [{ year: "2024", exam: "Exam 1" }],
         total: 1,
         answer: "",
@@ -307,6 +308,7 @@ const ECP_2M = [
           "Two capacitors $3\\mu\\text{F}$ and $6\\mu\\text{F}$ are connected in series. Find the equivalent capacitance of the combination.",
         difficulty: "easy",
         marks: "2 marks",
+        imp: true,
         repetitions: [{ year: "2024", exam: "Exam 2" }],
         total: 1,
         answer: "",
@@ -316,6 +318,7 @@ const ECP_2M = [
           "The potential at a point is given by $V = ax - bx^3$ where a and b are constants. Find the value of electric field at that point.",
         difficulty: "easy",
         marks: "2 marks",
+        imp: true,
         repetitions: [{ year: "2024", exam: "Exam 3" }],
         total: 1,
         answer: "",
@@ -539,6 +542,7 @@ const ECF_2M = [
         question: "State and explain Gauss's law in electrostatics.",
         difficulty: "easy",
         marks: "2 marks",
+        imp: true,
         repetitions: [
           { year: "2024", exam: "Exam 1" },
           { year: "2024", exam: "Exam 2" },
@@ -552,6 +556,7 @@ const ECF_2M = [
         question: "Write/Give any two properties of electric field lines.",
         difficulty: "easy",
         marks: "2 marks",
+        imp: true,
         repetitions: [
           { year: "2025", exam: "Exam 2" },
           { year: "2026", exam: "Exam 1" },
@@ -564,6 +569,7 @@ const ECF_2M = [
         question: "What is electrostatic shielding? Mention one use of it.",
         difficulty: "easy",
         marks: "2 marks",
+        imp: true,
         repetitions: [{ year: "2026", exam: "Exam 1" }],
         total: 1,
         answer:
@@ -632,6 +638,7 @@ const ECF_2M = [
         question: "Two identical point charges are separated by a distance 0.2 m in air repel each other with a force 9 × 10³ N. Find the magnitude of each charge.",
         difficulty: "easy",
         marks: "2 marks",
+        imp: true,
         repetitions: [{ year: "2026", exam: "Exam 2" }],
         total: 1,
         answer:
@@ -641,6 +648,7 @@ const ECF_2M = [
         question: "Find the force on a point charge 2 × 10⁻⁶ C, placed at a point in a uniform electric field of 0.8 NC⁻¹.",
         difficulty: "easy",
         marks: "2 marks",
+        imp: true,
         repetitions: [{ year: "2025", exam: "Exam 2" }],
         total: 1,
         answer:
