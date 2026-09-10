@@ -137,6 +137,9 @@ export default function ChapterQuestions() {
                         return (
                           <div key={i} className="bg-white px-2 py-3">
                             <div className="mb-1 flex flex-wrap items-center gap-2">
+                              <span className="inline-flex h-5 w-5 items-center justify-center rounded-full border-2 border-blue-600 text-[11px] font-black text-blue-700">
+                                {i + 1}
+                              </span>
                               <span className="rounded bg-slate-100 px-1.5 py-0.5 text-[10px] font-bold text-slate-900">{q.tag}</span>
                               <span className="rounded bg-emerald-100 px-1.5 py-0.5 text-[10px] font-bold text-emerald-700">Easy</span>
                               <span className="rounded bg-violet-100 px-1.5 py-0.5 text-[10px] font-bold text-violet-700">Concept</span>
