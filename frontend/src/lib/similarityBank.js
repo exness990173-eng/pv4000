@@ -680,6 +680,18 @@ const ECF_3M = [
           "1. Field lines start from positive charges and end on negative charges.\n2. Two field lines never intersect each other.\n3. The tangent to a field line at a point gives the direction of the electric field at that point, and the density of lines represents the strength of the field.",
       },
       {
+        question: "Mention any three basic properties of electric charges.",
+        difficulty: "easy",
+        marks: "3 marks",
+        repetitions: [
+          { year: "2024", exam: "Exam 2" },
+          { year: "2024", exam: "Exam 3" },
+        ],
+        total: 2,
+        answer:
+          "1. Electric charge is quantized ($q = ne$, where $n$ is an integer).\n2. Charge is conserved (it can neither be created nor destroyed, only transferred).\n3. Charge is additive (the total charge of a system is the algebraic sum of individual charges).",
+      },
+      {
         question: "Derive an expression for torque acting on an electric dipole placed in a uniform electric field.",
         difficulty: "easy",
         marks: "3 marks",
@@ -711,18 +723,6 @@ const ECF_3M = [
         total: 1,
         answer:
           "The electrostatic force between two stationary point charges is directly proportional to the product of their magnitudes and inversely proportional to the square of the distance between them.\n\nFormula: $F = \\frac{1}{4\\pi\\varepsilon_0} \\cdot \\frac{q_1 q_2}{r^2}$.\n\nThe force acts along the line joining the two charges.",
-      },
-      {
-        question: "Mention any three basic properties of electric charges.",
-        difficulty: "easy",
-        marks: "3 marks",
-        repetitions: [
-          { year: "2024", exam: "Exam 2" },
-          { year: "2024", exam: "Exam 3" },
-        ],
-        total: 2,
-        answer:
-          "1. Electric charge is quantized ($q = ne$, where $n$ is an integer).\n2. Charge is conserved (it can neither be created nor destroyed, only transferred).\n3. Charge is additive (the total charge of a system is the algebraic sum of individual charges).",
       },
       {
         question: "Define linear charge density. Mention the expression for electric field at a point due to an infinitely long uniformly charged wire and explain the terms.",
